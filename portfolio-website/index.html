@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/jpeg" href="/src/assets/LinkedInPfp.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+  </head>
+  <script>
+    var COLOR_THEME = localStorage.getItem("colorTheme"); // "light" or "dark"
+    if (!COLOR_THEME) {
+        COLOR_THEME = "dark" // default color theme
+    }
+  </script>
+  <body data-bs-theme="dark">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
